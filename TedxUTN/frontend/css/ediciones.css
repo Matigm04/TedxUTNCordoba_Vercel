@@ -1,0 +1,901 @@
+/* Ediciones Page Specific Styles */
+
+.page-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../images/Foto_Grupal_esc1.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Editions Section */
+.editions {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.edition-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.edition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.edition-header {
+    background: linear-gradient(135deg, #e62b1e 0%, #ff4444 100%);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.edition-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.edition-date {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.edition-content {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.edition-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.edition-stats {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.edition-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #e62b1e;
+}
+
+.edition-stats .stat i {
+    color: #e62b1e;
+    font-size: 1.2rem;
+}
+
+.edition-stats .stat span {
+    font-weight: 600;
+    color: #333;
+}
+
+.edition-gallery {
+    position: relative;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Speakers Section */
+.speakers-section {
+    padding: 0 50px 30px;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    padding-top: 40px;
+}
+
+.section-separator {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, #e62b1e 0%, #ff4444 100%);
+    margin: 50px 0 40px 0;
+    border-radius: 1px;
+    opacity: 0.8;
+}
+
+.speakers-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.speakers-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #e62b1e 0%, #ff4444 100%);
+    border-radius: 2px;
+}
+
+.speakers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Centrar el contenido para equilibrar espacios laterales */
+    justify-content: center;
+    align-items: stretch; /* Clave: esto iguala la altura de las tarjetas en cada fila */
+}
+
+/* Configurar ancho de tarjetas para que quepan exactamente 4 por fila */
+.speaker-card {
+    /* Ancho calculado: (100% - 3 gaps) / 4 = aproximadamente 22% */
+    flex: 0 0 calc(22% - 7.5px);
+    min-width: 200px;
+    max-width: 280px;
+    text-align: center;
+    background: white;
+    padding: 15px 20px 0 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f0f0f0;
+    overflow: visible; /* Permitir que el contenido se expanda */
+    position: relative;
+    /* Usar Flexbox interno para layout de contenido */
+    display: flex;
+    flex-direction: column;
+    height: 340px; /* Reducido de 360px a 340px para tarjetas más compactas */
+    /* Configurar áreas flexibles para alineación vertical */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.speaker-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15), 
+                0 0 20px rgba(230, 43, 30, 0.1); /* Resplandor sutil del color TEDx */
+    border-color: #e62b1e;
+    background: linear-gradient(145deg, #ffffff 0%, #fafafa 100%); /* Fondo ligeramente diferente */
+}
+
+.speaker-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 5px auto 10px auto;
+    border: 4px solid #e62b1e;
+    transition: all 0.3s ease;
+    display: block;
+    /* Imagen flexible pero sin crecer */
+    flex-shrink: 0;
+}
+
+.speaker-card:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(230, 43, 30, 0.25); /* Sombra más suave pero visible */
+    border-color: #ff4444; /* Cambio sutil en el borde */
+}
+
+.speaker-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1px; /* Reducido de 8px a 2px para máxima compactación */
+    line-height: 1.2; /* Reducido de 1.3 a 1.2 */
+    /* Área reducida para nombres - menos espacio entre nombre y profesión */
+    height: 120px; /* Reducido de 60px a 50px para acortar aún más la distancia */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Permitir salto de línea en nombres largos */
+    white-space: normal;
+    word-wrap: break-word;
+    padding: 0 5px;
+}
+
+.speaker-card p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    background: #e62b1e;
+    padding: 12px 20px; /* Padding lateral para mejor legibilidad */
+    margin: 0;
+    border-radius: 0 0 18px 18px;
+    font-weight: 500;
+    height: 110px; /* Altura mayor para acomodar textos largos como el de Gianna */
+    display: flex; /* Usar flex para centrar contenido */
+    text-align: center;
+    /* Asegurar ancho completo extendiendo más allá del padding de la tarjeta */
+    width: calc(100% + 44px); /* Extender para cubrir todo el ancho incluyendo padding y borde */
+    margin-left: -22px; /* Centrar la extensión */
+    margin-right: -22px;
+    margin-top: auto; /* Empujar hacia abajo */
+    /* Permitir que el texto se ajuste automáticamente */
+    white-space: normal;
+    word-wrap: break-word;
+    /* Flexbox interno para centrado vertical */
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* No contraer este elemento */
+}
+
+/* Sponsors Section */
+.sponsors-section {
+    padding: 0 50px 50px;
+    border-top: 1px solid #eee;
+    margin-top: 30px;
+    padding-top: 40px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    position: relative;
+}
+
+.sponsors-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #e62b1e 50%, transparent 100%);
+}
+
+.sponsors-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.sponsors-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #e62b1e 0%, #ff4444 100%);
+    border-radius: 2px;
+}
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: stretch;
+}
+
+.sponsor-logo {
+    text-align: center;
+    background: white;
+    padding: 25px 25px 0 25px;
+    border-radius: 15px;
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sponsor-logo:hover {
+    border-color: #e62b1e;
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(230, 43, 30, 0.15);
+}
+
+.sponsor-logo img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.sponsor-logo p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    text-align: center;
+    line-height: 1.2;
+    background: #e62b1e;
+    padding: 8px 0;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    margin-right: -25px;
+    box-sizing: border-box;
+    text-shadow: none;
+    border-radius: 0 0 13px 13px;
+    margin-bottom: -2px;
+}
+
+/* Centrar el último elemento cuando está solo en su fila */
+.sponsors-grid .sponsor-logo:last-child:nth-child(4n+1) {
+    grid-column: 2 / 4;
+    justify-self: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .edition-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .edition-header {
+        padding: 30px 20px;
+    }
+
+    .edition-header h2 {
+        font-size: 2rem;
+    }
+
+    .edition-stats {
+        justify-content: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .speakers-section,
+    .sponsors-section {
+        padding: 0 30px 30px;
+    }
+
+    .speakers-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: stretch; /* Igualar altura en filas */
+    }
+    
+    .speaker-card {
+        padding: 15px 18px 0 18px;
+        min-height: 250px; /* Altura mínima en lugar de fija */
+        overflow: visible; /* Permitir expansión */
+        /* Usar Flexbox interno en responsive */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        /* Ancho flexible para tablet (2 por fila) */
+        flex: 0 0 calc(45% - 10px);
+        min-width: 180px;
+        max-width: 250px;
+    }
+    
+    .speaker-card img {
+        width: 85px;
+        height: 85px;
+        margin: 5px auto 8px auto;
+        display: block;
+        flex-shrink: 0;
+    }
+    
+    .speaker-card h4 {
+        font-size: 1.05rem;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 45px; /* Reducido de 55px a 45px para compactación */
+        white-space: normal;
+        word-wrap: break-word;
+        padding: 0 5px;
+        line-height: 1.2; /* Reducido de 1.3 a 1.2 */
+        margin-bottom: 2px; /* Reducir espacio con la profesión */
+    }
+    
+    .speaker-card p {
+        font-size: 0.85rem;
+        margin: 0;
+        min-height: 44px;
+        padding: 10px 15px;
+        flex-shrink: 0;
+        width: calc(100% + 44px); /* Ajustar para cubrir todo el ancho en tablet */
+        margin-left: -22px;
+        margin-right: -22px;
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e62b1e;
+        color: white;
+        border-radius: 0 0 18px 18px;
+        white-space: normal;
+        word-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    .sponsors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    /* Centrar el último elemento en tablet cuando está solo */
+    .sponsors-grid .sponsor-logo:last-child:nth-child(odd) {
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+
+    .sponsor-logo {
+        padding: 20px 20px 0 20px;
+        height: 160px;
+    }
+
+    .sponsor-logo img {
+        max-height: 60px;
+        margin-bottom: 12px;
+    }
+
+    .sponsor-logo p {
+        font-size: 0.8rem;
+        padding: 6px 0;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .edition-content {
+        padding: 20px;
+    }
+
+    .edition-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .edition-stats .stat {
+        padding: 10px 15px;
+    }
+
+    .speakers-section h3,
+    .sponsors-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .speakers-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    
+    .speaker-card {
+        padding: 12px 15px 0 15px;
+        max-width: 300px;
+        width: 100%;
+        min-height: 230px; /* Altura mínima en lugar de fija */
+        overflow: visible; /* Permitir expansión */
+        /* Usar Flexbox interno en móvil */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .speaker-card img {
+        width: 75px;
+        height: 75px;
+        margin: 5px auto 8px auto;
+        display: block;
+        flex-shrink: 0;
+    }
+    
+    .speaker-card h4 {
+        font-size: 0.95rem;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 40px; /* Reducido de 50px a 40px para compactación en móvil */
+        white-space: normal;
+        word-wrap: break-word;
+        padding: 0 5px;
+        line-height: 1.2; /* Reducido de 1.3 a 1.2 */
+        margin-bottom: 2px; /* Reducir espacio con la profesión */
+    }
+    
+    .speaker-card p {
+        font-size: 0.8rem;
+        margin: 0;
+        min-height: 40px;
+        padding: 10px 12px;
+        flex-shrink: 0;
+        width: calc(100% + 44px); /* Ajustar para cubrir todo el ancho en mobile */
+        margin-left: -22px;
+        margin-right: -22px;
+        margin-top: auto;
+        background: #e62b1e;
+        color: white;
+        border-radius: 0 0 18px 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    .sponsors-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .sponsor-logo {
+        padding: 15px 15px 0 15px;
+        height: 140px;
+    }
+
+    .sponsor-logo img {
+        max-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .sponsor-logo p {
+        font-size: 0.8rem;
+        padding: 6px 0;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
+
+/* Reglas específicas para mejorar el mobile layout y centrarlo como en edición 2023 */
+@media (max-width: 480px) {
+    /* Override para que todas las tarjetas tengan el mismo tamaño centrado */
+    .speakers-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .speaker-card {
+        width: 100% !important;
+        max-width: 320px !important;
+        min-height: 250px;
+        margin: 0 !important; /* Remover márgenes específicos */
+        padding: 20px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .speaker-card img {
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid #e62b1e;
+    }
+    
+    .speaker-card h4 {
+        font-size: 1.1rem;
+        margin: 5px 0 2px 0; /* Reducir márgenes para compactación máxima */
+        min-height: auto;
+        text-align: center;
+        line-height: 1.2; /* Líneas más compactas */
+    }
+    
+    .speaker-card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+        margin-top: auto;
+        padding: 8px 15px;
+        text-align: center;
+        min-height: auto;
+        width: calc(100% + 44px) !important; /* Asegurar banda completa en mobile */
+        margin-left: -22px !important;
+        margin-right: -22px !important;
+        background: #e62b1e !important;
+        color: white !important;
+        border-radius: 0 0 18px 18px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    
+    /* Override para sponsors también */
+    .sponsors-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .sponsor-logo {
+        width: 100% !important;
+        max-width: 320px !important;
+        height: 160px;
+        margin: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .sponsor-logo img {
+        max-height: 60px !important;
+        max-width: 80%;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+    
+    .sponsor-logo p {
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+/* Regla especial para centrar automáticamente la última fila incompleta */
+.speakers-grid .speaker-card:last-child:nth-child(3n+1) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 250px;
+}
+
+.speakers-grid .speaker-card:last-child:nth-child(3n+2) {
+    grid-column-start: 1;
+}
+
+/* Si hay exactamente 2 tarjetas en la última fila en un grid de 3+ columnas */
+.speakers-grid .speaker-card:nth-last-child(2):nth-child(3n+1) {
+    grid-column: 2;
+}
+
+/* Regla específica para centrar las últimas 3 tarjetas como grupo */
+.speakers-grid .speaker-card:nth-child(n+5) {
+    /* Las tarjetas 5, 6 y 7 (segunda fila) - mantener flex normal con centrado automático */
+    flex: 0 0 calc(22% - 7.5px);
+}
+
+/* Mejoras específicas para tablet - transición suave hacia mobile */
+@media (max-width: 768px) and (min-width: 481px) {
+    .speakers-grid {
+        justify-content: center;
+        gap: 25px;
+    }
+    
+    .speaker-card {
+        flex: 0 0 calc(45% - 12.5px);
+        max-width: 300px;
+        min-height: 280px;
+    }
+    
+    .speaker-card img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .sponsors-grid {
+        gap: 30px;
+        justify-content: center;
+    }
+    
+    .sponsor-logo {
+        max-width: 280px;
+    }
+}
+
+/* Accordion Styles */
+.accordion-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+    background: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+.accordion-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: linear-gradient(135deg, #e53e3e, #c53030);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(229, 62, 62, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 200px;
+}
+
+.accordion-btn:hover {
+    background: linear-gradient(135deg, #c53030, #9c2626);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(229, 62, 62, 0.4);
+}
+
+.accordion-btn.active {
+    background: linear-gradient(135deg, #9c2626, #742727);
+}
+
+.accordion-btn i {
+    transition: transform 0.3s ease;
+}
+
+.accordion-btn.active i {
+    transform: rotate(180deg);
+}
+
+.accordion-btn i:first-child {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.accordion-btn:hover i:first-child {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.accordion-btn i:last-child {
+    margin-left: auto;
+    font-size: 0.9rem;
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-content i {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.accordion-btn:hover .btn-content i {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Accordion Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: white;
+}
+
+.accordion-content.active {
+    max-height: 2000px; /* Ajustar según contenido */
+}
+
+/* Responsive accordion buttons */
+@media (max-width: 768px) {
+    .accordion-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .accordion-btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Override for Ediciones Page */
+.footer {
+    width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background: #222;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}

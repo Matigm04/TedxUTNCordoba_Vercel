@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ediciones - TEDxUTN</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/ediciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo tedx2.png" alt="TEDxUTN">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ediciones.html" class="nav-link active">Ediciones</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inscripciones.html" class="nav-link">Inscripciones</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Nuestras Ediciones</h1>
+            <p>Revive los momentos más inspiradores de cada edición de TEDxUTN</p>
+        </div>
+    </section>
+
+    <!-- Editions Grid -->
+    <section class="editions">
+        <div class="container">
+            <!-- Edition 2024 -->
+            <div class="edition-card">
+                <div class="edition-header">
+                    <h2>TEDxUTNCórdoba 2024: "Hazlo Posible"</h2>
+                    <span class="edition-date">4 de Octubre, 2024</span>
+                </div>
+                
+                <!-- Información general del evento (siempre visible) -->
+                <div class="edition-content">
+                    <div class="edition-info">
+                        <p>La edición 2024 fue un evento que redefinió lo que consideramos inalcanzable. Lleno de charlas inspiradoras y emocionantes, nuestros oradores guiaron a los asistentes a través de experiencias transformadoras que los hicieron replantear su presente.</p>
+                        <p>Un espacio donde las barreras se desvanecieron y las posibilidades se multiplicaron. Con creatividad, pasión y acción, exploramos el potencial ilimitado que todos llevamos dentro, moldeando nuestro presente y definiendo el futuro.</p>
+                        
+                        <div class="edition-stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>500+ Asistentes</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-microphone"></i>
+                                <span>8 Speakers</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>5 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="edition-gallery">
+                        <div class="gallery-grid">
+                            <img src="./images/Edicion2024/Presentadores.jpg" alt="TEDxUTN 2024 - 1">
+                            <img src="./images/Edicion2024/Publico1.jpg" alt="TEDxUTN 2024 - 2">
+                            <img src="./images/Edicion2024/Publico2.jpg" alt="TEDxUTN 2024 - 3">
+                            <img src="./images/Edicion2024/Publico4.jpg" alt="TEDxUTN 2024 - 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botones de acordeón -->
+                <div class="accordion-buttons">
+                    <button class="accordion-btn" data-target="oradores-2024">
+                        <div class="btn-content">
+                            <i class="fas fa-microphone-alt"></i>
+                            <span>Ver Oradores</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="accordion-btn" data-target="sponsors-2024">
+                        <div class="btn-content">
+                            <i class="fas fa-handshake"></i>
+                            <span>Ver Sponsors</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Speakers Section (Desplegable) -->
+                <div class="accordion-content" id="oradores-2024">
+                    <div class="speakers-section">
+                        <h3>Oradores Destacados</h3>
+                        <div class="speakers-grid">
+                            <div class="speaker-card">
+                                <img src="./images/Edicion2024/Oradores/LucasSalim.JPG" alt="Lucas Salim">
+                                <h4>Lucas Salim</h4>
+                                <p>CEO & Fundador de Grupo Proaco</p>
+                            </div>
+                            <div class="speaker-card">
+                                <img src="./images/Edicion2024/Oradores/NORMA_QUEVEDO.jpg" alt="Norma Quevedo">
+                                <h4>Norma Quevedo</h4>
+                                <p>Comunicadora Profesional, locutora y actriz</p>
+                            </div>
+                            <div class="speaker-card">
+                                <img src="./images/Edicion2024/Oradores/Sergio_Cusmai.png" alt="Sergio Cusmai" style="object-position: center 20%;">
+                                <h4>Sergio Cusmai</h4>
+                                <p>Chief Executive Officer at Alpha-G</p>
+                            </div>
+                            <div class="speaker-card">
+                                <img src="./images/Edicion2024/Oradores/JULIA_MENSA.jpeg" alt="Julia Mensa">
+                                <h4>Julia Mensa</h4>
+                                <p>Cofundadora y CEO de Nunatak Biotech</p>
+                            </div>
+                            <div class="speaker-card">
+                                <img src="./images/Edicion2024/Oradores/GIANNA_MASTROLINARDO.jpg" alt="Gianna Mastrolinardo" style="object-position: center 30%;">
+                                <h4>Gianna Mastrolinardo</h4>
+                                <p>Estudiante de Ciencia Política en la UNC y activista por los derechos de las personas con discapacidades</p>
+                            </div>
+                            <div class="speaker-card">
+                                <img src="./images/Edicion2024/Oradores/GUILLERMO_GUTIERREZ.jpg" alt="Guillermo Gutierrez" style="object-position: center 25%;">
+                                <h4>Guillermo Gutierrez</h4>
+                                <p>Ingeniero Electrónico y Mag. en ingeniería de control automático</p>
+                            </div>
+                            <div class="speaker-card">
+                                <img src="./images/Edicion2024/Oradores/NARDO_ESCANILLA.JPG" alt="NARDO_ESCANILLA" style="object-position: center 35%;">
+                                <h4>Nardo Escanilla</h4>
+                                <p>Comediante y actor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sponsors Section (Desplegable) -->
+                <div class="accordion-content" id="sponsors-2024">
+                    <div class="sponsors-section">
+                        <h3>Sponsors y Colaboradores</h3>
+                        <div class="sponsors-grid">
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Utn_Cordoba2.png" alt="Universidad Tecnológica Nacional Córdoba">
+                                <p>UTN Córdoba</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/SEU.png" alt="Secretaría de Extension Universitaria UTN-FRC">
+                                <p>SEU</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Aguiar_y_Asoc.png" alt="Aguiar & Asoc.">
+                                <p>Aguiar & Asoc.</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/itlg2.png" alt="itlg">
+                                <p>ITLG</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Cofactory.jpg" alt="Cofactory">
+                                <p>Cofactory</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/RVN_logo.png" alt="RVN">
+                                <p>RVN</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Indoors.jpg" alt="indoors">
+                                <p>Indoors</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Grupo_Kumar.png" alt="Grupo_Kumar">
+                                <p>Grupo Kumar</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Dloss.png" alt="Dloss">
+                                <p>Dloss</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Pepsi.png" alt="Pepsi">
+                                <p>Pepsi</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Warner_Bros2.png" alt="Warner_Bros">
+                                <p>Warner Bros</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/McDonalds.png" alt="McDonalds">
+                                <p>McDonald's</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Sportcom2.jpeg" alt="Sportcom">
+                                <p>Sportcom</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Alumac.png" alt="Alumac">
+                                <p>Alumac</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Movisuelos.png" alt="Movisuelos">
+                                <p>Movisuelos</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Chammas2.jpeg" alt="Chammas">
+                                <p>Chammas</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2024/Sponsors/Global.png" alt="Global">
+                                <p>Global</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edition 2023 -->
+            <div class="edition-card">
+                <div class="edition-header">
+                    <h2>TEDxUTNCórdoba 2023: "Inteligencia 3.0"</h2>
+                    <span class="edition-date">6 de Octubre, 2023</span>
+                </div>
+                
+                <div class="edition-content">
+                    <div class="edition-info">
+                        <p>La cuarta edición se centró en la importancia de las conexiones humanas en un mundo cada vez más digital. Exploramos cómo la tecnología puede unir en lugar de separar.</p>
+                        
+                        <div class="edition-stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>350+ Asistentes</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-microphone"></i>
+                                <span>6 Speakers</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>5 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="edition-gallery">
+                        <div class="gallery-grid">
+                            <img src="./images/Edicion2023/Presentadores.jpg" alt="TEDxUTN 2023 - 1">
+                            <img src="./images/Edicion2023/Publico1.jpg" alt="TEDxUTN 2023 - 2">
+                            <img src="./images/Edicion2023/Cerebro1.jpg" alt="TEDxUTN 2023 - 3">
+                            <img src="./images/Edicion2023/Coro1.jpg" alt="TEDxUTN 2023 - 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botones de acordeón -->
+                <div class="accordion-buttons">
+                    <button class="accordion-btn" data-target="oradores-2023">
+                        <div class="btn-content">
+                            <i class="fas fa-microphone-alt"></i>
+                            <span>Ver Oradores</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="accordion-btn" data-target="sponsors-2023">
+                        <div class="btn-content">
+                            <i class="fas fa-handshake"></i>
+                            <span>Ver Sponsors</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Speakers Section (Desplegable) -->
+                <div class="accordion-content" id="oradores-2023">
+                    <div class="speakers-section">
+                    <h3>Speakers Destacados</h3>
+                    <div class="speakers-grid">
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/MAURICIO AMBROSI.jpg" alt="Mauricio Ambrosi">
+                            <h4>Mauricio Ambrosi</h4>
+                            <p>Percusionista de “Los Caligaris</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/SERGIO NIRICH CON FONDO.jpeg" alt="SERGIO NIRICH">
+                            <h4>Sergio Nirich</h4>
+                            <p>Profesor e Ingeniero Civil</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/Sergio Logares.jpg" alt="Sergio Logares">
+                            <h4>Sergio Logares</h4>
+                            <p>Ingeniero en Sistemas de Información</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/MARIA COZZI.jpg" alt="Maria Cozzi">
+                            <h4>Maria Cozzi</h4>
+                            <p>Relacionista Pública</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/CECILIA BORETTO.png" alt="Cecilia Boretto">
+                            <h4>Cecilia Boretto</h4>
+                            <p>Analista en Sistemas</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/Sergio Logares.jpg" alt="Sergio Logares">
+                            <h4>Sergio Logares</h4>
+                            <p>Ingeniero en Sistemas de Información</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/Gaston.png" alt="Gastón Massa">
+                            <h4>Gastón Massa</h4>
+                            <p>Comediante y Arquitecto</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/MARU IBAÑEZ.jpeg" alt="Maru Ibañez">
+                            <h4>Maru Ibañez</h4>
+                            <p>Licenciada en Publicidad</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/Tomás Arinci.jpg" alt="Tomás Arinci">
+                            <h4>Tomás Arinci</h4>
+                            <p>Director del Coro Municipal de Córdoba</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/Guadalupe Vargas.jpeg" alt="Guadalupe Vargas Foix">
+                            <h4>Guadalupe Vargas Foix</h4>
+                            <p>Licenciada en Psicología</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2023/Oradores/Sol Constable.jpg" alt="Sol Constable">
+                            <h4>Sol Constable</h4>
+                            <p>Corredora de montaña</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Sponsors Section (Desplegable) -->
+                <div class="accordion-content" id="sponsors-2023">
+                    <div class="sponsors-section">
+                    <h3>Sponsors y Colaboradores</h3>
+                    <div class="sponsors-grid">
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2024/Sponsors/Utn_Cordoba2.png" alt="Universidad Tecnológica Nacional">
+                            <p>UTN Córdoba</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2024/Sponsors/SEU.png" alt="Secretaría de Extension Universitaria UTN-FRC">
+                            <p>SEU UTN</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/flexxus.png" alt="Flexxus">
+                            <p>Flexxus</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2024/Sponsors/Pepsi.png" alt="Pepsi">
+                            <p>Pepsi</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Nuevomec SA.png" alt="Nuovamec S.A">
+                            <p>Nuovamec S.A</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Glaciar.png" alt="Glaciar">
+                            <p>Glaciar</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2024/Sponsors/Chammas2.jpeg" alt="Chammas alfajores">
+                            <p>Chammas alfajores</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Rosemberg tarletta.png" alt="Rosemberg Tarletta">
+                            <p>Rosemberg Tarletta</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Ingenieria Humana.png" alt="Ingenieria Humana">
+                            <p>Ingeniería Humana</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Tasto.png" alt="Tasto">
+                            <p>Tasto</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Dinamic_Software-Logo.wine.png" alt="Dinamic">
+                            <p>Dinamic</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/22.WINWIN-VAKER.jpg" alt="Vaker">
+                            <p>Vaker</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Grupo Conectar.png" alt="Grupo conectar">
+                            <p>Grupo Conectar</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2024/Sponsors/Aguiar_y_Asoc.png" alt="Aguiar & asoc.">
+                            <p>Aguiar & Asoc.</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Mancor.png" alt="Mancor">
+                            <p>Mancor</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Che cliche.png" alt="Che cliche">
+                            <p>Che Cliché</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2024/Sponsors/Dloss.png" alt="Dloss">
+                            <p>Dloss</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2024/Sponsors/Indoors.jpg" alt="Indoors">
+                            <p>Indoors</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Ozoiner.png" alt="Ozonizer">
+                            <p>Ozonizer</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2024/Sponsors/Alumac.png" alt="Alumac">
+                            <p>Alumac</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Alfaser.png" alt="Alfaser S.A">
+                            <p>Alfaser S.A</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Aurico.png" alt="Aurico">
+                            <p>Aurico</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2023/Sporsors/Aliaga.png" alt="Aliaga">
+                            <p>Aliaga</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- CTA Section -->
+            <!-- Edition 2022 -->
+            <div class="edition-card">
+                <div class="edition-header">
+                    <h2>TEDxUTN 2022: "¿Conversamos?"</h2>
+                    <span class="edition-date">12 de Noviembre, 2022</span>
+                </div>
+                <div class="edition-content">
+                    <div class="edition-info">
+                        <p>Después de los desafíos globales, esta edición celebró la capacidad humana de adaptarse e innovar. Historias de superación y creatividad ante la adversidad.</p>
+                        <div class="edition-stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>300+ Asistentes</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-microphone"></i>
+                                <span>7 Speakers</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>5.5 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edition-gallery">
+                        <div class="gallery-grid">
+                            <img src="./images/Edicion2022/Equipo.JPG" alt="TEDxUTN 2022 - Equipo">
+                            <img src="./images/Edicion2022/Presentadores.JPG" alt="TEDxUTN 2022 - Presentadores">
+                            <img src="./images/Edicion2022/Publico1.JPG" alt="TEDxUTN 2022 - Público 1">
+                            <img src="./images/Edicion2022/Publico2.JPG" alt="TEDxUTN 2022 - Público 2">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botones de acordeón -->
+                <div class="accordion-buttons">
+                    <button class="accordion-btn" data-target="oradores-2022">
+                        <div class="btn-content">
+                            <i class="fas fa-microphone-alt"></i>
+                            <span>Ver Oradores</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="accordion-btn" data-target="sponsors-2022">
+                        <div class="btn-content">
+                            <i class="fas fa-handshake"></i>
+                            <span>Ver Sponsors</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Speakers Section (Desplegable) -->
+                <div class="accordion-content" id="oradores-2022">
+                    <div class="speakers-section">
+                    <h3>Speakers Destacados</h3>
+                    <div class="speakers-grid">
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/FedericoBongiorno.jpg" alt="Federico Bongiorno">
+                            <h4>Federico Bongiorno</h4>
+                            <p>Co-fundador de “Everest media, Universo Ecodiem, Everest Real Estate y Everest NFT”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/AnaLescano.JPG" alt="Ana Lescano">
+                            <h4>Ana Inés Lescano</h4>
+                            <p>Coach ontológico profesional</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/BrunoBagilet.jpg" alt="Bruno Bagilet">
+                            <h4>Bruno Rova Bagilet</h4>
+                            <p>Chief humanity officer de “Winclap”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/FrancisoGarcia.jpg" alt="Francisco Garcia">
+                            <h4>Francisco Garcia</h4>
+                            <p>Fundador de “Panza llena, corazón contento” y “Casa Aurora”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/BernardoCarignano.jpg" alt="Bernardo Carignano">
+                            <h4>Bernardo Carignano</h4>
+                            <p>Fundador de “Yo me animo”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/IrisGastañaga.png" alt="Iris Gastañaga">
+                            <h4>Iris Gastañaga</h4>
+                            <p>CEO y fundadora de “Kinetic Corp”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/LeandroDionisio.jpg" alt="Leandro Dionisio">
+                            <h4>Leandro Dionisio</h4>
+                            <p>Médico psiquiatra</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/LucasYMatias.jpg" alt="Leandro Dionisio">
+                            <h4>Lucas Di Cesare y Matias Vivanco</h4>
+                            <p>Creadores de “Hoy no duermo en casa”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2022/Oradores/MercedesGonzález.jpg" alt="Leandro Dionisio">
+                            <h4>Mercedes Gonzáles del Pino</h4>
+                            <p>Cofounder de “Somos del pino”</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- Sponsors Section (Desplegable) -->
+                <div class="accordion-content" id="sponsors-2022">
+                    <div class="sponsors-section">
+                        <h3>Sponsors y Colaboradores</h3>
+                        <div class="sponsors-grid">
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2022/Sponsors/AguiarYAsoc.jpg" alt="Aguiar & Asoc.">
+                                <p>Aguiar & Asoc.</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2022/Sponsors/Dinamic.png" alt="Dinamic">
+                                <p>Dinamic</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2022/Sponsors/DLOSS.jpg" alt="DLOSS">
+                                <p>DLOSS</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2022/Sponsors/IvecoGroup.png" alt="Iveco Group">
+                                <p>Iveco Group</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2021/Sponsors/AVEIT.png" alt="AVEIT">
+                                <p>AVEIT</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2021/Sponsors/utn.jpeg" alt="UTN">
+                                <p>UTN</p>
+                            </div>
+                            <div class="sponsor-logo">
+                                <img src="./images/Edicion2022/Sponsors/11 - HOST - SEU - SEU_HostAcadémico.png" alt="SEU">
+                                <p>SEU</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edition 2021 -->
+            <div class="edition-card">
+                <div class="edition-header">
+                    <h2>TEDxUTN 2021: "Reiniciar"</h2>
+                    <span class="edition-date">Octubre, 2021</span>
+                </div>
+                <div class="edition-content">
+                    <div class="edition-info">
+                        <p>La edición 2021 marcó un nuevo comienzo, explorando cómo reinventarnos y adaptarnos a los cambios. Un evento lleno de inspiración y nuevas ideas.</p>
+                        <div class="edition-stats">
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>250+ Asistentes</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-microphone"></i>
+                                <span>6 Speakers</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>5 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edition-gallery">
+                        <div class="gallery-grid">
+                            <img src="./images/Edicion2021/Equipo.jpg" alt="TEDxUTN 2021 - Equipo">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Botones de acordeón -->
+                <div class="accordion-buttons">
+                    <button class="accordion-btn" data-target="oradores-2021">
+                        <div class="btn-content">
+                            <i class="fas fa-microphone-alt"></i>
+                            <span>Ver Oradores</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <button class="accordion-btn" data-target="sponsors-2021">
+                        <div class="btn-content">
+                            <i class="fas fa-handshake"></i>
+                            <span>Ver Sponsors</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <!-- Speakers Section (Desplegable) -->
+                <div class="accordion-content" id="oradores-2021">
+                    <div class="speakers-section">
+                    <h3>Speakers Destacados</h3>
+                    <div class="speakers-grid">
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2021/Oradores/CristinaSchwander.JPG" alt="Cristina Schwander">
+                            <h4>Cristina Schwander</h4>
+                            <p>Especialista en Liderazgo e Inteligencia Emocional</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2021/Oradores/FranciscoTranchet.JPG" alt="Francisco Tranchet">
+                            <h4>Francisco Tranchet</h4>
+                            <p>Co-founder y CEO en “Dinamic”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2021/Oradores/MarinaCastellino.JPG" alt="Marina Castellino">
+                            <h4>Marina Castellino</h4>
+                            <p>Directora Ejecutiva de Fundación Líderes de Ansenuza</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2021/Oradores/IñakiGorostidi.jpg" alt="Iñaki Gorostidi">
+                            <h4>Iñaki Gorostidi</h4>
+                            <p>Diseñador industrial y Cofundador de “Ecolif”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2021/Oradores/MariaZinn.jpeg" alt="Maria Zinn">
+                            <h4>Maria Zinn</h4>
+                            <p>Founder de “Calma comunicación”</p>
+                        </div>
+                        <div class="speaker-card">
+                            <img src="./images/Edicion2021/Oradores/MatiasOchoa.jpg" alt="Matias Ochoa">
+                            <h4>Matias Ochoa</h4>
+                            <p>Marketing and Business Development</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Sponsors Section (Desplegable) -->
+                <div class="accordion-content" id="sponsors-2021">
+                    <div class="sponsors-section">
+                    <h3>Sponsors y Colaboradores</h3>
+                    <div class="sponsors-grid">
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2021/Sponsors/bartolom_cerutti.jpeg" alt="Bartolom Cerutti">
+                            <p>Bartolom Cerutti</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2021/Sponsors/mancor.png" alt="Mancor">
+                            <p>Mancor</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2021/Sponsors/AVEIT.png" alt="AVEIT">
+                            <p>AVEIT</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2021/Sponsors/utn.jpeg" alt="UTN">
+                            <p>UTN</p>
+                        </div>
+                        <div class="sponsor-logo">
+                            <img src="./images/Edicion2021/Sponsors/11 - HOST - SEU - SEU_HostAcadémico.png" alt="SEU">
+                            <p>SEU</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Quieres ser parte de la próxima edición?</h2>
+                <p>Únete a nosotros y vive una experiencia transformadora</p>
+                <a href="inscripciones.html" class="cta-button">Inscríbete Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TEDxUTN</h3>
+                    <p>Ideas que valen la pena difundir</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="ediciones.html">Ediciones</a></li>
+                        <li><a href="inscripciones.html">Inscripciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> info@tedxutn.com</p>
+                    <p><i class="fas fa-phone"></i> +54 11 1234-5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Universidad Tecnológica Nacional</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TEDxUTN. Todos los derechos reservados.</p>
+                <p>Este evento independiente TEDx opera bajo licencia de TED.</p>
+            </div>
+        </div>
+    </footer>    <script src="js/script.js"></script>
+</body>
+</html>

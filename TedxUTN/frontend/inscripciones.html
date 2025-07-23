@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones - TEDxUTNCórdoba</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/inscripciones.css">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">            <div class="nav-logo">
+                <img src="images/logo tedx2.png" alt="TEDxUTNCórdoba">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ediciones.html" class="nav-link">Ediciones</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inscripciones.html" class="nav-link active">Inscripciones</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->    <section class="page-hero">
+        <div class="hero-content">
+            <h1>Bienvenido a TEDxUTNCórdoba - 4ª Edición 😎</h1>
+            <p>Inscríbete al proceso de selección para presenciar esta nueva edición</p>
+        </div>
+    </section>
+
+    <!-- Event Info Section -->
+    <section class="event-info">
+        <div class="container">            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Fecha</h3>
+                    <p>Viernes 10 de Octubre, 2024</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horario</h3>
+                    <p>17:30 hs</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ubicación</h3>
+                    <p>Auditorio UTN FRC - Córdoba</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Dirigido a</h3>
+                    <p>Comunidad UTN FRC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="registration">
+        <div class="container">
+            <div class="registration-content">
+                <!-- Form Column -->
+                <div class="form-column">                    <div class="form-header">
+                        <h2>Formulario de Inscripción</h2>
+                        <p>TEDxUTNCórdoba es un evento con licencia universitaria dirigida a estudiantes, graduados, docentes y no docentes de la comunidad UTN FRC. Esta nueva edición tendrá lugar el día <strong>VIERNES 10 de octubre desde las 17:30 hs</strong>, en el auditorio de la facultad.</p>
+                        <br>
+                        <p>Si completás este formulario te estás inscribiendo al proceso de selección para presenciar la cuarta edición de TEDxUTNCórdoba 💥.</p>
+                        <br>                        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #e62b1e; margin: 20px 0; color: #333;">
+                            <p style="color: #333; margin-bottom: 8px;"><strong>📅 Inscripciones:</strong> Del 19/08/24 al 25/09/24 🥳</p>
+                            <p style="color: #333; margin-bottom: 8px;"><strong>⏱️ Tiempo estimado:</strong> 3 minutos 💪</p>
+                            <p style="color: #333; margin-bottom: 0;"><strong>📢 Notificaciones:</strong> Lunes 30/09</p>
+                        </div>                        <p>¡Esperamos verte el próximo 4 de octubre para compartir una tarde diferente! 😁</p>
+                        <p><em>- El equipo de TEDxUTNCórdoba ✖🚀🚀</em></p>
+                    </div>
+
+                    <form id="inscriptionForm" class="registration-form" onsubmit="return handleFormSubmit(event)">
+                        <!-- Data Privacy Notice -->
+                        <div class="form-section privacy-notice">
+                            <h3><i class="fas fa-shield-alt"></i> Datos Personales</h3>
+                            <div class="privacy-message">
+                                <p><i class="fas fa-info-circle"></i> La información que proporciones será utilizada únicamente para fines relacionados con la organización y comunicación del evento TEDxUTNCórdoba - 4ª Edición. Tus datos personales serán tratados de manera confidencial y no serán compartidos con terceros sin tu consentimiento expreso.</p>
+                                <p><strong>Compromiso de confidencialidad:</strong> Nos comprometemos a proteger tu privacidad y manejar tus datos con la máxima seguridad.</p>
+                            </div>
+                        </div>
+
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-user"></i> Información Personal</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">Nombre *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Apellido *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Teléfono *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="birthDate">Fecha de Nacimiento *</label>
+                                    <input type="date" id="birthDate" name="birthDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender">Género</label>
+                                    <select id="gender" name="gender">
+                                        <option value="">Seleccionar</option>
+                                        <option value="masculino">Masculino</option>
+                                        <option value="femenino">Femenino</option>
+                                        <option value="otro">Otro</option>
+                                        <option value="no-especificar">Prefiero no especificar</option>
+                                    </select>
+                                </div>
+                            </div>                            <div class="form-group">
+                                <label for="dni">DNI *</label>
+                                <input type="text" id="dni" name="dni" required placeholder="Ej: 12345678">
+                            </div>
+                        </div>
+
+                        <!-- Professional Information -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-briefcase"></i> Información Profesional</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="occupation">Ocupación *</label>
+                                    <input type="text" id="occupation" name="occupation" required placeholder="Tu profesión o trabajo actual">
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Empresa/Institución</label>
+                                    <input type="text" id="company" name="company" placeholder="Donde trabajas o estudias">
+                                </div>
+                            </div>                            <div class="form-group">
+                                <label for="education">Nivel Educativo *</label>
+                                <select id="education" name="education" required>
+                                    <option value="">Seleccionar</option>
+                                    <option value="secundario">Secundario</option>
+                                    <option value="terciario">Terciario</option>
+                                    <option value="universitario">Universitario</option>
+                                    <option value="posgrado">Posgrado</option>
+                                    <option value="doctorado">Doctorado</option>
+                                </select>
+                            </div>
+
+                            <!-- UTN Relationship -->
+                            <div class="form-group">
+                                <label for="utnRelation">¿Sos estudiante o graduado de la UTN? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="utnRelation" value="estudiante" onchange="toggleCareerField(this.value)">
+                                        <span class="radio-mark"></span>
+                                        Estudiante
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="utnRelation" value="graduado" onchange="toggleCareerField(this.value)">
+                                        <span class="radio-mark"></span>
+                                        Graduado
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="utnRelation" value="docente" onchange="toggleCareerField(this.value)">
+                                        <span class="radio-mark"></span>
+                                        Docente
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="utnRelation" value="otra" onchange="toggleCareerField(this.value)">
+                                        <span class="radio-mark"></span>
+                                        Otra
+                                    </label>
+                                </div>
+                            </div>                            <!-- UTN Career Field (shown only if relevant) -->
+                            <div class="form-group" id="careerField" style="display: none;">
+                                <label for="utnCareer">¿De qué carrera? *</label>
+                                <select id="utnCareer" name="utnCareer">
+                                    <option value="">Seleccionar carrera</option>
+                                    <option value="sistemas">Ingeniería en Sistemas de Información</option>
+                                    <option value="civil">Ingeniería Civil</option>
+                                    <option value="industrial">Ingeniería Industrial</option>
+                                    <option value="quimica">Ingeniería Química</option>
+                                    <option value="electronica">Ingeniería Electrónica</option>
+                                    <option value="mecanica">Ingeniería Mecánica</option>
+                                    <option value="electrica">Ingeniería Eléctrica</option>
+                                    <option value="metalurgica">Ingeniería Metalúrgica</option>
+                                </select>                            </div>
+
+                            <!-- Subject Field for Teachers -->
+                            <div class="form-group" id="subjectField" style="display: none;">
+                                <label for="subject">¿Qué materia enseñas? *</label>
+                                <input type="text" id="subject" name="subject" placeholder="Ej: Analisis Matematico, Fisica, Programación....">
+                            </div>
+
+                            <!-- Student ID Field -->
+                            <div class="form-group" id="legajoField" style="display: none;">
+                                <label for="legajo">Legajo *</label>
+                                <input type="text" id="legajo" name="legajo" placeholder="Texto de respuesta breve">
+                            </div>
+
+                            <!-- Current Year Field -->
+                            <div class="form-group" id="currentYearField" style="display: none;">
+                                <label for="currentYear">Año que estás cursando *</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="currentYear" value="1">
+                                        <span class="checkmark"></span>
+                                        1°
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="currentYear" value="2">
+                                        <span class="checkmark"></span>
+                                        2°
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="currentYear" value="3">
+                                        <span class="checkmark"></span>
+                                        3°
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="currentYear" value="4">
+                                        <span class="checkmark"></span>
+                                        4°
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="currentYear" value="5">
+                                        <span class="checkmark"></span>
+                                        5°
+                                    </label>
+                                </div>
+                            </div><div class="form-group">
+                                <label for="interests">Áreas de Interés</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="tecnologia">
+                                        <span class="checkmark"></span>
+                                        Tecnología
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="ciencia">
+                                        <span class="checkmark"></span>
+                                        Ciencia
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="arte">
+                                        <span class="checkmark"></span>
+                                        Arte y Diseño
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="negocios">
+                                        <span class="checkmark"></span>
+                                        Negocios
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="educacion">
+                                        <span class="checkmark"></span>
+                                        Educación
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="interests" value="salud">
+                                        <span class="checkmark"></span>
+                                        Salud
+                                    </label>
+                                </div>                            </div>
+                        </div>                        <!-- Additional Information -->
+                        <div class="form-section">
+                            <h3><i class="fas fa-heart"></i> Conociéndote</h3>
+                            
+                            <!-- Food allergies -->
+                            <div class="form-group">
+                                <label for="allergies">¿Sos celíaco, alérgico o intolerante a algún alimento? En caso de que tu respuesta sea sí, por favor detállalo a continuación.</label>
+                                <textarea id="allergies" name="allergies" rows="3" placeholder="Texto de respuesta breve"></textarea>
+                            </div>
+
+                            <!-- Previous TED knowledge -->
+                            <div class="form-group">
+                                <label for="knewTED">¿Conocías previamente las charlas TED? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="knewTED" value="si" required>
+                                        <span class="radio-mark"></span>
+                                        Sí
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="knewTED" value="no" required>
+                                        <span class="radio-mark"></span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Previous participation -->
+                            <div class="form-group">
+                                <label for="previousParticipation">¿Participaste en alguna edición de TEDxUTNCórdoba? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="previousParticipation" value="si" required>
+                                        <span class="radio-mark"></span>
+                                        Sí
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="previousParticipation" value="no" required>
+                                        <span class="radio-mark"></span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- How did you find out -->
+                            <div class="form-group">
+                                <label for="howFoundOut">¿Cómo te enteraste de esta 4ª edición? *</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="howFoundOut" value="amigo" required>
+                                        <span class="radio-mark"></span>
+                                        Me contó un amigo/a
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="howFoundOut" value="flyers" required>
+                                        <span class="radio-mark"></span>
+                                        Flyers en la facultad
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="howFoundOut" value="redes" required>
+                                        <span class="radio-mark"></span>
+                                        Redes sociales
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="howFoundOut" value="otra" required>
+                                        <span class="radio-mark"></span>
+                                        Otra...
+                                    </label>
+                                </div>
+                            </div>                            <!-- Why participate -->
+                            <div class="form-group">
+                                <label for="whyParticipate">¿Por qué te gustaría ser parte del evento? Coméntanos en pocas palabras 🧡</label>
+                                <textarea id="whyParticipate" name="whyParticipate" rows="4" placeholder="Texto de respuesta larga"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Community Message at Bottom -->
+                        <div class="community-message-bottom" style="background: linear-gradient(135deg, #e62b1e 0%, #ff4444 100%); color: white; padding: 25px; border-radius: 15px; margin: 25px 0; box-shadow: 0 8px 25px rgba(230, 43, 30, 0.2); text-align: center;">
+                            <div style="margin-bottom: 15px;">
+                                <i class="fas fa-university" style="font-size: 2rem; margin-bottom: 10px;"></i>
+                            </div>
+                            <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 15px; font-weight: 500;">
+                                Este evento está pensado principalmente para la comunidad de la UTN. Sin embargo, no te desalientes si no perteneces a esta comunidad, ya que podría haber lugares disponibles!! ✅
+                            </p>
+                            <div style="background: rgba(255,255,255,0.15); padding: 15px; border-radius: 10px; margin: 15px 0;">
+                                <p style="margin-bottom: 10px; font-weight: 600;">
+                                    <i class="fas fa-eye" style="margin-right: 8px;"></i>
+                                    Quedate atento a nuestras redes
+                                </p>
+                                <p style="margin-bottom: 5px;">
+                                    <i class="fab fa-instagram" style="margin-right: 8px;"></i>
+                                    @tedxutncordoba
+                                </p>
+                                <p style="margin-bottom: 0;">
+                                    <i class="fab fa-linkedin" style="margin-right: 8px;"></i>
+                                    TEDx UTN Córdoba 🙌🚀
+                                </p>
+                            </div>
+                            <p style="margin-bottom: 0; font-style: italic; opacity: 0.9;">
+                                El equipo de TEDxUTNCórdoba ✖
+                            </p>
+                        </div>
+
+                        <!-- Submit Button --><div class="form-submit">
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Inscripción al Proceso de Selección
+                            </button>
+                            <p class="submit-note">Al enviar este formulario, te inscribes al proceso de selección. Las definiciones serán notificadas el Lunes 30/09.</p>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Info Column -->
+                <div class="info-column">                    <div class="event-details">
+                        <h3>Detalles del Evento</h3>
+                        <div class="detail-item">
+                            <h4>TEDxUTNCórdoba - 4ª Edición: "Ideas que Transforman"</h4>
+                            <p>Un evento con licencia universitaria que reunirá a la comunidad UTN FRC para compartir ideas innovadoras y experiencias transformadoras en una tarde única.</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <h4>Proceso de Selección</h4>
+                            <ul>
+                                <li><i class="fas fa-info-circle"></i> Dirigido a estudiantes, graduados, docentes y no docentes UTN FRC</li>
+                                <li><i class="fas fa-info-circle"></i> Inscripciones: 19/08/24 al 25/09/24</li>
+                                <li><i class="fas fa-info-circle"></i> Notificaciones: Lunes 30/09</li>
+                                <li><i class="fas fa-info-circle"></i> Evento: Viernes 10 de octubre, 17:30 hs</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-item">
+                            <h4>¿Qué incluye tu participación?</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Acceso a todas las charlas TEDx</li>
+                                <li><i class="fas fa-check"></i> Networking con la comunidad UTN</li>
+                                <li><i class="fas fa-check"></i> Experiencia inspiradora</li>
+                                <li><i class="fas fa-check"></i> Certificado de participación</li>
+                            </ul>
+                        </div>
+                    </div>                    <div class="contact-info">
+                        <h3>¿Necesitas Ayuda?</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>tedxutncordoba@frc.utn.edu.ar</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <strong>Facultad</strong>
+                                <p>UTN Facultad Regional Córdoba</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Cronograma</strong>
+                                <p>Inscripciones hasta 25/09/24</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TEDxUTNCórdoba</h3>
+                    <p>Ideas que valen la pena difundir</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="ediciones.html">Ediciones</a></li>
+                        <li><a href="inscripciones.html">Inscripciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> tedxutncordoba@frc.utn.edu.ar</p>
+                    <p><i class="fas fa-university"></i> UTN Facultad Regional Córdoba</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Córdoba, Argentina</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TEDxUTNCórdoba. Todos los derechos reservados.</p>
+                <p>Este evento independiente TEDx opera bajo licencia de TED.</p>
+            </div>
+        </div>
+    </footer>    <script src="js/script.js"></script>
+    <script src="js/inscripciones.js"></script>
+</body>
+</html>

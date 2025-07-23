@@ -1,0 +1,30 @@
+{
+  "name": "tedxutn-registration",
+  "version": "1.0.0",
+  "description": "Sistema de inscripción para TEDxUTN Córdoba",  "main": "backend/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/app.js",
+    "client": "live-server frontend --port=3001 --open=/index.html",
+    "start": "node backend/app.js",
+    "setup": "node backend/setup/database.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["tedx", "registration", "utn", "cordoba"],
+  "author": "TEDxUTN Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0",
+    "live-server": "^1.2.2"
+  }
+}
